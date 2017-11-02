@@ -10,6 +10,7 @@ import javax.inject.Inject;
 
 public class PreferenceManager {
 
+
     private SharedPreferences mSharedPreferences;
 
     @Inject

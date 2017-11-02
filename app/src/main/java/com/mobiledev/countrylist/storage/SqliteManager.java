@@ -19,15 +19,12 @@ public class SqliteManager extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "countrylist";
     private static final String TABLE_NAME = "countrytable";
-
     private static final String NAME = "name";
     private static final String CAPITAL = "capital";
     private static final String FLAG = "flag";
     private static final String POPULATION = "population";
     private static final String AREA = "area";
     private static final String CURRENCY = "currency";
-
-
     Context c;
 
     public SqliteManager(Context context) {

@@ -7,6 +7,7 @@ import android.preference.PreferenceManager;
 import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mobiledev.countrylist.storage.SqliteManager;
 
 import javax.inject.Singleton;
 
@@ -70,9 +71,9 @@ public class NetModule {
         return PreferenceManager.getDefaultSharedPreferences(application);
     }
 
-//    @Provides
-//    @Singleton
-//    SqliteManager providesSQLiteOpenHelper(Application application) {
-//        return new SqliteManager(application);
-//    }
+    @Provides
+    @Singleton
+    SqliteManager providesSQLiteOpenHelper(Application application) {
+        return new SqliteManager(application);
+    }
 }
